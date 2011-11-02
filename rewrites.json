@@ -4,6 +4,18 @@
     "to": "/index.html"
 },
 {
+    "from"  : "/blog",
+    "to"    : "../../_design/refuge.blog/_list/latest_posts/latest_posts",
+    "query" : {
+        "descending" : "true",
+        "limit" : "10"
+    }
+},
+{
+    "from" : "/post/*",
+    "to"   : "../../_design/refuge.blog/_show/post/*"
+},
+{
     "from": "/*",
     "to": "*"
 }

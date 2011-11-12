@@ -16,6 +16,18 @@
     "to"   : "../../_design/refuge.blog/_show/post/*"
 },
 {
+    "from" : "/blog/post/*",
+    "to"   : "../../_design/refuge.blog/_show/post/*"
+},
+{
+    "from" : "/blog/rss",
+    "to"   : "../../_design/refuge.blog/_list/rss_feed/latest_posts",
+    "query" : {
+        "descending" : "true",
+        "limit" : "10"
+    }
+},
+{
     "from": "/*",
     "to": "*"
 }

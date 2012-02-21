@@ -1,10 +1,38 @@
 [
-{
-    "from": "/",
-    "to": "/index.html"
-},
-{
-    "from": "/*",
-    "to": "*"
-}
+    {
+        "from": "/",
+        "to": "/index.html"
+    },
+    {
+        "from": "/blog",
+        "to": "../../_design/refuge.blog/_list/latest_posts/latest_posts",
+        "query": {
+            "descending": "true",
+            "limit": "10"
+        }
+    },
+    {
+        "from": "/post/*",
+        "to": "../../_design/refuge.blog/_show/post/*"
+    },
+    {
+        "from": "/blog/post/*",
+        "to": "../../_design/refuge.blog/_show/post/*"
+    },
+    {
+        "from": "/blog/rss",
+        "to": "../../_design/refuge.blog/_list/rss_feed/latest_posts",
+        "query": {
+            "descending": "true",
+            "limit": "10"
+        }
+    },
+    {
+        "from": "/:id/*",
+        "to": "../../:id/*"
+    },
+    {
+        "from": "/*",
+        "to": "*"
+    }
 ]

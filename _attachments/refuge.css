@@ -1,6 +1,5 @@
 body {
   background-color: #fff;
-  position: relative;
 }
 section {
   padding-top: 60px;
@@ -8,7 +7,6 @@ section {
 section > .row {
   margin-bottom: 10px;
 }
-
 
 /* Footer
 -------------------------------------------------- */
@@ -25,5 +23,6 @@ section > .row {
 .footer p {
   color: #555;
 }
+
 
 

@@ -16,6 +16,10 @@
         "to": "../../_design/refuge.blog/_show/post/*"
     },
     {
+        "from": "/blog/post/:id/*",
+        "to": "../../:id/*"
+    },
+    {
         "from": "/blog/post/*",
         "to": "../../_design/refuge.blog/_show/post/*"
     },
@@ -27,11 +31,7 @@
             "limit": "10"
         }
     },
-    {
-        "from": "/:id/*",
-        "to": "../../:id/*"
-    },
-    {
+        {
         "from": "/*",
         "to": "*"
     }
